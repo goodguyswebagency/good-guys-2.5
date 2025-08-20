@@ -1,5 +1,5 @@
 // CSS import
-import "../css/pages/calendar-booking.css";
+import "../../css/pages/calendar-booking.css";
 // JavaScript import
 // animations
 import "../animations/wordBackgroundHighlight.js";
