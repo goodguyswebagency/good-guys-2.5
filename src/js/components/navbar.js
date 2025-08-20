@@ -384,7 +384,7 @@ window.addEventListener("resize", handleLinksAfterScroll);
 /////////////////////////////////////////////
 // menu peekaboo
 /////////////////////////////////////////////
-// var lastScrollTop = 0;
+let lastScrollTop = 0;
 // var scrollThreshold = 10; // Set a threshold for scroll detection
 // var isScrolling; // Variable to hold the timeout
 
