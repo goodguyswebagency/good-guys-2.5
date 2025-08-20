@@ -1,0 +1,14 @@
+@import "../components/heading.css";
+
+@media screen and (min-width: 991px) {
+   .section_seo-why .seo-why_card:not(:first-child):before {
+      position: absolute;
+      content: "";
+      left: -12px;
+      top: 0px;
+      height: 100%;
+      width: 1px;
+      background-color: #212121;
+      opacity: 0.5;
+   }
+}

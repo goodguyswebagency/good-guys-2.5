@@ -1,0 +1,115 @@
+.blog-list {
+   --gap-column: 24px;
+   --gap-row: 4rem;
+   --column-line-offset: calc(var(--gap-column) / 2 + 1px);
+   --row-line-offset: calc(var(--gap-row) / 2 + 1px);
+   --line-thickness: 1px;
+   --line-color: #000;
+   gap: var(--gap-row) var(--gap-column);
+   overflow: hidden;
+}
+
+@media screen and (max-width: 991px) {
+   .blog-list {
+      --gap-column: 16px;
+      --gap-row: 3rem;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .blog-list {
+      --gap-column: 8px;
+      --gap-row: 2rem;
+      --line-thickness: 1px;
+      --line-offset: calc(var(--gap) / 2);
+   }
+}
+
+.blog {
+   position: relative;
+}
+
+.blog:before,
+.blog:after {
+   content: "";
+   position: absolute;
+   background-color: var(--line-color);
+   z-index: 1;
+}
+
+.blog:after {
+   inline-size: 100vw;
+   block-size: var(--line-thickness);
+   inset-inline-start: 0;
+   inset-block-start: calc(var(--row-line-offset) * -1);
+}
+
+.blog:before {
+   inline-size: var(--line-thickness);
+   block-size: 100%;
+   inset-inline-start: calc(var(--column-line-offset) * -1);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+   .blog:before {
+      block-size: calc(100% - 1rem);
+   }
+}
+
+.blog .blog-arrow {
+   transform: scale(0);
+   transition: all 0.2s;
+}
+
+.blog .blog-arrow-wrapper {
+   overflow: visible;
+}
+
+.blog .blog-arrow-wrapper:before {
+   position: absolute;
+   height: 2.8125rem;
+   width: 2.8125rem;
+   max-width: 0px;
+   max-height: 0px;
+   transition: all 0.2s;
+   top: 0rem;
+   right: 0rem;
+   border-radius: 50%;
+   background-color: #efff32;
+   content: "";
+}
+
+.blog:has(.blog_link:hover) .blog-arrow-wrapper:before {
+   max-width: 100%;
+   max-height: 100%;
+}
+
+.blog:has(.blog_link:hover) .blog-arrow {
+   transform: scale(1);
+}
+
+.blog .blog_content-top-info .time-to-read {
+   color: rgb(131, 131, 131);
+}
+
+.home_resources .blog:last-child {
+   /* base (non-media) overrides can go here if needed */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+   .home_resources .blog:last-child {
+      grid-area: span 1 / span 8 / span 1 / span 8 !important;
+      display: flex;
+      gap: 16px;
+      border-bottom: 0px solid #000;
+   }
+   .home_resources .blog:last-child .blog_media {
+      width: 50%;
+   }
+   .home_resources .blog:last-child .blog_content {
+      width: 50%;
+      justify-content: space-between;
+      padding-top: 0px;
+      padding-bottom: 0px;
+   }
+}

@@ -1,0 +1,4 @@
+[fade-from-right="true"] {
+   opacity: 0;
+   transform: translateX(100px); /* match the animation distance */
+}

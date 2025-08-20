@@ -1,0 +1,143 @@
+@import "./components/button.css";
+@import "./components/footer.css";
+
+/***********************************************
+  Spacer styles tablet
+***********************************************/
+@media screen and (max-width: 991px) {
+   :root {
+      --spacing--spacer-12: var(--size--4);
+      --spacing--spacer-13: var(--size--5);
+   }
+}
+
+/***********************************************
+  Spacer styles mobile landscape
+***********************************************/
+@media screen and (max-width: 767px) {
+   :root {
+      --spacing--spacer-4: var(--size--0-75);
+      --spacing--spacer-5: var(--size--1);
+      --spacing--spacer-6: var(--size--1-5);
+      --spacing--spacer-7: var(--size--1-63);
+      --spacing--spacer-8: var(--size--1-5);
+      --spacing--spacer-9: var(--size--2-5);
+      --spacing--spacer-10: var(--size--3);
+      --spacing--spacer-11: var(--size--3-5);
+      --spacing--spacer-12: var(--size--4);
+      --spacing--spacer-13: var(--size--4);
+   }
+}
+
+/***********************************************
+  section styles
+***********************************************/
+main section,
+header,
+footer {
+   position: relative;
+}
+
+/***********************************************
+  remove scroll bounce
+***********************************************/
+body {
+   overscroll-behavior: none;
+}
+
+/***********************************************
+  container styles
+***********************************************/
+.w-container {
+   container-type: inline-size;
+}
+
+@media screen and (min-width: 1728px) {
+   .padding-content,
+   .padding-global {
+      padding-left: 4.125rem;
+      padding-right: 4.125rem;
+   }
+}
+
+/***********************************************
+  bredcrumbs
+***********************************************/
+.dark-background .bredcrumbs-manuell {
+   border: 1px solid #fff;
+}
+.dark-background .bredcrumbs-manuell a,
+.dark-background .bredcrumbs-manuell p {
+   color: #fff;
+}
+
+/***********************************************
+  sticky professional-partner 
+***********************************************/
+.professional-partner:hover path {
+   fill: #fff;
+}
+
+.partner-container {
+   border-left: none !important;
+   border-right: none !important;
+}
+
+/***********************************************
+  cookie banner
+***********************************************/
+.dark-background .fs-consent_banner p {
+   color: #212121;
+}
+/* // .dark-background  .fs-consent_prefs_form .button-wrapper[white-text],
+// .dark-background .fs-consent_component .button-wrapper[white-text]{
+//   border-top-color: #212121;
+//   color: #212121;
+// }  */
+.coockie-accept-all .button-link::before {
+   transform: translateY(0em);
+   border-radius: 0%;
+   transition:
+      border-radius 0.15s cubic-bezier(0.61, 1, 0.88, 1) 0.15s,
+      0.2s cubic-bezier(0.61, 1, 0.88, 1);
+}
+.coockie-accept-all {
+   color: #fff;
+}
+.coockie-accept-all svg {
+   transform: rotate(45deg);
+}
+.coockie-accept-all svg path {
+   stroke: #efff32;
+}
+
+.button-wrapper.button-small.fs_consent-button:hover .text-color-accent {
+   color: #fff;
+}
+
+/***********************************************
+  disable ios showing play button on autoplay videos
+***********************************************/
+[background-animation]::-webkit-media-controls {
+   display: none !important;
+}
+
+[background-animation]::-webkit-media-controls-start-playback-button {
+   display: none !important;
+   -webkit-appearance: none;
+}
+
+/***********************************************
+blog time to read
+***********************************************/
+.blog_content-top-info-block .time-to-read {
+   font-size: 1rem;
+   line-height: 137.5%;
+   color: var(--color--text-secondary);
+   letter-spacing: -0.05625rem;
+}
+@media screen and (max-width: 767px) {
+   .blog_content-top-info-block .time-to-read {
+      letter-spacing: -0.05rem;
+   }
+}

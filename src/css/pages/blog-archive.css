@@ -1,0 +1,17 @@
+@media screen and (min-width: 767px) and (max-width: 991px) {
+   .featured-blog .text-tag {
+      color: #fff;
+      border: 1px solid #fff;
+   }
+
+   .featured-blog .time-to-read,
+   .featured-blog .text-size-small {
+      color: #fff !important;
+      opacity: 0.7;
+   }
+
+   .featured-blog .featured-blog_info-top-separator {
+      background-color: #fff;
+      opacity: 0.2;
+   }
+}

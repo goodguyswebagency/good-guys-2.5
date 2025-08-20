@@ -1,0 +1,28 @@
+[cta-vertical="true"] .cta {
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   gap: 3rem;
+}
+
+@media screen and (max-width: 991px) {
+   [cta-vertical="true"] .cta {
+      gap: 1rem;
+   }
+}
+
+[cta-vertical="true"] .spacer-4 {
+   display: none;
+}
+
+[cta-vertical="true"] .cta_info-text {
+   display: none;
+}
+
+.dark-background .section_cta {
+   border-top: 1px solid #fff;
+}
+
+.dark-background .section_cta .cta_info-heading {
+   color: #fff;
+}

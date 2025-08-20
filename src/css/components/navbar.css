@@ -1,0 +1,542 @@
+.nav-drop-wrapper .nav-main-link-arrow {
+   /* max-width: 991px */
+}
+@media screen and (max-width: 991px) {
+   .nav-drop-wrapper .nav-main-link-arrow {
+      transform: rotate(-90deg);
+   }
+}
+/* // &.nav-drop-wrapper_active{
+ //   .nav-main-link-arrow{
+ //     transform: rotate(90deg);
+ //   }
+ // } */
+@media screen and (min-width: 992px) {
+   .nav-drop-wrapper:hover .nav-main-link-inner {
+      padding-left: 1.5rem;
+   }
+   .nav-drop-wrapper:hover .nav-drop-underline {
+      max-width: 100%;
+   }
+   .nav-drop-wrapper:hover .nav-main-link-arrow {
+      transform: rotate(180deg);
+   }
+   .nav-drop-wrapper:hover .nav-main-link-star {
+      max-width: 100%;
+      opacity: 1;
+   }
+}
+.nav-drop-wrapper.dim {
+   filter: blur(1px);
+   opacity: 0.7;
+}
+@media screen and (max-width: 991px) {
+   .nav-drop-wrapper {
+      width: 100%;
+   }
+   .nav-drop-wrapper .nav-main-link-inner {
+      justify-content: space-between;
+   }
+   .nav-drop-wrapper .nav-drop-underline {
+      display: none;
+   }
+}
+.active-dropdown .nav-main-link-arrow {
+   transform: rotate(0deg);
+}
+.nav-dropdown-link_bellow {
+   opacity: 0;
+   max-height: 0px;
+   overflow: hidden;
+   transition: 0.2s ease;
+}
+@media screen and (min-width: 992px) {
+   .nav-dropdown-link_bellow:hover .nav-dropdown-link_bellow-arrow {
+      opacity: 1;
+   }
+}
+@media screen and (max-width: 991px) {
+   .nav-dropdown-link_bellow {
+      left: 2rem;
+      bottom: 0.5rem;
+   }
+}
+/* migration & integration listings */
+@media screen and (min-width: 992px) {
+   .nav-drop_link-wrapper:hover .nav-dropdown-link {
+      padding: 0 0 0 1rem;
+   }
+   .nav-drop_link-wrapper:hover .nav-dropdown-link .nav-dropdown-link-star {
+      opacity: 1;
+      max-width: 1000px;
+   }
+   .nav-drop_link-wrapper:hover .nav-dropdown-link .nav-dropdown-link-text {
+      opacity: 1;
+   }
+   .nav-drop_link-wrapper:hover .nav-dropdown-link + .nav-dropdown-link_bellow {
+      max-height: 1000px;
+      opacity: 1;
+   }
+}
+@media screen and (max-width: 991px) {
+   .nav-drop_link-wrapper-last.active-link-wrapper {
+      padding-bottom: 2.5rem;
+   }
+}
+/* migration & integration listings */
+@media screen and (min-width: 992px) {
+   .nav-dropdown-link:hover {
+      padding: 0 0 0 1rem;
+   }
+   .nav-dropdown-link:hover .nav-dropdown-link-star {
+      opacity: 1;
+      max-width: 1000px;
+   }
+   .nav-dropdown-link:hover .nav-dropdown-link-text {
+      opacity: 1;
+   }
+   .nav-dropdown-link:hover + .nav-dropdown-link_bellow {
+      max-height: 1000px;
+      opacity: 1;
+   }
+}
+/* migration & integration listing sidebar scroll styling for media links */
+.nav-drop_content-media_sublinks::-webkit-scrollbar,
+.nav-drop_content-media_sublinks-mobile::-webkit-scrollbar {
+   width: 8px; /* Controls the overall width of the scrollbar */
+   padding: 2.5px; /* Controls the padding of the Scrollbar */
+   border-right: 1px solid #e6e6e6;
+   border-left: 1px solid #e6e6e6;
+}
+.nav-drop_content-media_sublinks::-webkit-scrollbar-track,
+.nav-drop_content-media_sublinks-mobile::-webkit-scrollbar-track {
+   background: transparent; /* Sets the background to transparent, change to a Hex or RGB value if you would like */
+}
+.nav-drop_content-media_sublinks::-webkit-scrollbar-thumb,
+.nav-drop_content-media_sublinks-mobile::-webkit-scrollbar-thumb {
+   background: #b1a9a9; /* Change the Hex value to change the scroll handle */
+   border-right: 1px solid #e6e6e6;
+   border-left: 1px solid #e6e6e6;
+}
+.nav-drop_content-media_sublinks-mobile {
+   max-height: 0px;
+   transition: all 0.2s;
+   display: none;
+   overflow: hidden;
+   padding-left: 1.5rem;
+}
+@media screen and (max-width: 991px) {
+   .nav-drop_content-media_sublinks-mobile {
+      display: flex;
+   }
+}
+.nav-drop_content-media_sublinks-mobile .nav-drop-link-wrapper:first-child {
+   padding-top: 1.5rem;
+}
+@media screen and (max-width: 991px) {
+   .active-link-wrapper {
+      width: 100%;
+      padding-bottom: 2.5rem;
+      /* left: -1rem; */
+   }
+   .active-link-wrapper .nav-dropdown-link_bellow {
+      max-height: 1000px;
+      opacity: 1;
+   }
+}
+.active-link-wrapper .nav-drop_content-media_sublinks-mobile {
+   max-height: 11rem;
+   overflow: auto;
+}
+.nav-drop_content-media:has(.nav-drop_content-media_sublinks) {
+   border-radius: 0px;
+}
+.nav-drop_content-media-image {
+   opacity: 0;
+   transition: all 1s ease;
+   z-index: 10;
+}
+.nav-drop_content-media-image.show {
+   opacity: 1;
+   z-index: 20;
+}
+/* dropdown content blocks fade and show */
+.nav-drop_content {
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.3s ease;
+   transform: translateY(-10px);
+}
+.nav-drop_content:before {
+   content: "";
+   height: 4rem;
+   width: 40%;
+   top: -3rem;
+   left: 0px;
+   position: absolute;
+}
+/* this before element is to fill the gap between the link triger and the content
+ so when we move the mouse over the empty space, the dropdown stays open */
+.menu-open .nav-drop_content {
+   height: -webkit-fill-available;
+   background-color: transparent;
+}
+.menu-open .nav-drop_content:before {
+   top: 0rem;
+   left: -3rem;
+   height: 100%;
+   width: 3rem;
+}
+@media screen and (min-width: 992px) {
+   .nav-drop-wrapper:hover .nav-drop_content {
+      /* on smaller screen we handle this with JavaScript with click event
+     by adding and removing the class show-drop-content */
+      display: flex;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+   }
+}
+/* small screen drop content showing */
+@media screen and (max-width: 991px) {
+   .show-drop-content.nav-drop_content {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      max-height: 1000px;
+      display: flex;
+      width: 100%;
+   }
+   .show-drop-content.nav-drop_content .nav-drop_content-links {
+      padding-top: 0rem;
+      padding-bottom: 1rem;
+      padding-left: 0rem;
+      margin-top: 1.5rem;
+      border-bottom: 1px solid var(--swatch--ufo-blue);
+      width: 100%;
+      grid-row-gap: 0.5rem;
+   }
+}
+.w-nav-overlay {
+   top: 0px;
+}
+.menu-button {
+   position: relative;
+   z-index: 1000;
+}
+@media screen and (max-width: 991px) {
+   .menu-button {
+      display: flex !important;
+   }
+}
+.navbar_logo {
+   position: relative;
+   z-index: 1000;
+}
+@media screen and (max-width: 1024) {
+   .navbar_logo {
+      padding: 1.5rem 1rem 1.5rem 1rem;
+   }
+}
+@media screen and (max-width: 991px) {
+   .navbar_logo .navbar_logo-svg {
+      width: 3.4375rem;
+      height: 2.64906rem;
+   }
+}
+.nav-menu {
+   z-index: 1100;
+}
+/* When main menu is open */
+.w-nav-overlay .nav-menu {
+   z-index: 100;
+   padding-top: 8rem;
+   min-height: 70vh;
+   flex-direction: column;
+   justify-content: space-between;
+   background: var(--color--background-primary);
+   padding-bottom: 3rem;
+   padding-left: 2rem;
+   padding-right: 2rem;
+   width: 100%;
+   max-width: 151.69rem;
+   margin-left: auto;
+   margin-right: auto;
+   display: grid !important;
+   grid-column-gap: 24px;
+   grid-template-rows: auto;
+   grid-template-columns: repeat(12, 1fr);
+   grid-auto-columns: 1fr;
+   width: 100%;
+   box-shadow: 0px 8px 30px 10px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 991px) {
+   .w-nav-overlay .nav-menu {
+      padding-top: 6rem;
+      display: flex !important;
+      height: 100dvh;
+      overflow: auto;
+   }
+   .w-nav-overlay .nav-menu::-webkit-scrollbar {
+      width: 8px; /* Controls the overall width of the scrollbar */
+      padding: 2.5px; /* Controls the padding of the Scrollbar */
+      border-right: 1px solid #e6e6e6;
+      border-left: 1px solid #e6e6e6;
+   }
+   /* Track - This is the part that contains the bit you click and drag */
+   .w-nav-overlay .nav-menu::-webkit-scrollbar-track {
+      background: transparent; /* Sets the background to transparent, change to a Hex or RGB value if you would like */
+   }
+   /* Handle - This is the bit you actually click and drag */
+   .w-nav-overlay .nav-menu::-webkit-scrollbar-thumb {
+      background: #b1a9a9; /* Change the Hex value to change the scroll handle */
+      border-right: 1px solid #e6e6e6;
+      border-left: 1px solid #e6e6e6;
+   }
+}
+@media screen and (max-width: 767px) {
+   .w-nav-overlay .nav-menu {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+   }
+}
+.w-nav-overlay .nav-menu .nav-drop-wrapper_bonus {
+   display: block;
+}
+.w-nav-overlay .nav-menu_links-container {
+   flex-direction: column;
+   gap: 0rem;
+   align-items: baseline;
+   background-color: var(--swatch--light-1);
+   grid-column: 2 / 13;
+}
+@media screen and (max-width: 991px) {
+   .w-nav-overlay .nav-menu_links-container {
+      grid-column: 2 / 9;
+   }
+}
+@media screen and (max-width: 767px) {
+   .w-nav-overlay .nav-menu_links-container {
+      grid-column: 1 / 4;
+   }
+}
+.w-nav-overlay .nav-menu_links-container .nav-drop-wrapper {
+   position: relative;
+   width: 100%;
+   z-index: 200;
+   /* padding: 0.75rem 0; */
+   /* when menu is open, we set the content to be relative to the nav-menu
+   and not to the nav-drop-wrapper, so we can place them all in the same place on the right side */
+}
+.w-nav-overlay .nav-menu_links-container .nav-drop-wrapper .nav-drop_content {
+   top: 8rem;
+   /* nav-menu padding + nav-menu grid gap + nav-drop-wrapper width + nav-menu grid column width */
+   left: calc(2.4375rem + 1.5rem + 9rem + 8.333%);
+   box-shadow: none;
+   padding: 0px;
+}
+@media screen and (max-width: 991px) {
+   .w-nav-overlay
+      .nav-menu_links-container
+      .nav-drop-wrapper
+      .nav-drop_content {
+      position: static;
+      max-width: 100%;
+   }
+}
+.w-nav-overlay .nav-menu_links-container .nav-drop-wrapper .nav-main-link-star {
+   display: none;
+}
+@media screen and (min-width: 992px) {
+   .w-nav-overlay
+      .nav-menu_links-container
+      .nav-drop-wrapper:hover
+      .nav-main-link-inner {
+      padding-left: 0px !important;
+   }
+   .w-nav-overlay
+      .nav-menu_links-container
+      .nav-drop-wrapper:hover
+      .nav-main-link-arrow {
+      transform: rotate(90deg);
+   }
+}
+.w-nav-overlay .nav-menu_links-container .nav-drop-wrapper .nav-main-link {
+   padding: 0.75rem 0px;
+}
+.w-nav-overlay .nav-menu_social {
+   display: flex;
+   grid-column: 2 / 13;
+}
+@media screen and (max-width: 991px) {
+   .w-nav-overlay .nav-menu_social {
+      grid-column: 1 / 9;
+   }
+}
+.w-nav-overlay .nav-drop-list .nav-drop_content-media {
+   overflow: visible;
+}
+@media screen and (max-width: 991px) {
+   .w-nav-overlay .nav-drop-list .nav-drop_content-media {
+      display: none;
+   }
+}
+.w-nav-overlay
+   .nav-drop-list
+   .nav-drop_content-media
+   .nav-drop_content-media_sublinks {
+   height: 50vh;
+}
+.nav-drop-list .nav-drop_content-media .nav-drop_content-media-image {
+   background-color: var(--swatch--light-1);
+}
+.w-nav-button.w--open {
+   background-color: var(--swatch--light-1);
+}
+/* menu peekaboo */
+.navbar {
+   transition:
+      padding 0.3s ease,
+      background-color 0.3s ease;
+}
+.navbar.menu-hidden {
+   /* transform: translateY(-100%); */
+}
+.navbar.menu-background {
+   background-color: var(--swatch--light-1);
+}
+.dark-background .navbar {
+   --swatch--light-1: #212121;
+   --swatch--ufo-blue: #ff16be;
+   --swatch--text-black-dark: #f6f6f6;
+   --swatch--dark-1: #fff;
+   --color--background-primary: #212121;
+   --color--text-primary: #fff;
+   --swatch--dark-black: #fff;
+}
+.dark-background .navbar .navbar_logo-svg path {
+   fill: #fff;
+}
+.dark-background .navbar .nav-main-link {
+   color: #fff;
+}
+.dark-background .navbar .nav-main-link-arrow path {
+   stroke: #fff;
+}
+.dark-background .navbar .nav-main-link_container .nav-drop-underline {
+   background-color: #fff;
+}
+.dark-background
+   .navbar
+   .nav-drop_content-media_sublinks::-webkit-scrollbar-thumb,
+.dark-background
+   .navbar
+   .nav-drop_content-media_sublinks-mobile::-webkit-scrollbar-thumb,
+.dark-background .navbar .nav-menu::-webkit-scrollbar-thumb {
+   border-right: 1px solid #ff16be;
+   border-left: 1px solid #ff16be;
+   background: #ff16be;
+}
+.dark-background .navbar .menu-button {
+   background-color: #212121;
+}
+.dark-background .navbar .button-wrapper[white-text="false"] {
+   color: #fff;
+   border-top-color: #fff;
+}
+.dark-background .navbar .button-wrapper[white-text="false"] svg path {
+   stroke: #fff;
+}
+.dark-background
+   .navbar
+   .button-wrapper[white-text="false"]:has(.button-link:hover) {
+   color: #212121;
+}
+.dark-background
+   .navbar
+   .button-wrapper[white-text="false"]:has(.button-link:hover)
+   svg {
+   transform: rotate(45deg);
+}
+.dark-background
+   .navbar
+   .button-wrapper[white-text="false"]:has(.button-link:hover)
+   svg
+   path {
+   stroke: #ff16be;
+}
+.dark-background
+   .navbar
+   .button-wrapper[white-text="false"]
+   .button-link:before {
+   background-color: #fff;
+}
+.dark-background .navbar .nav-dropdown-link_bellow-arrow path {
+   stroke: #fff;
+}
+.dark-background
+   .button-wrapper[white-text]:not(
+      .fs-consent_banner .button-wrapper[white-text]
+   ):not(.fs-consent_prefs_popup .button-wrapper[white-text]) {
+   color: #fff;
+   border-top-color: #fff;
+}
+.dark-background
+   .button-wrapper[white-text]:not(
+      .fs-consent_banner .button-wrapper[white-text]
+   ):not(.fs-consent_prefs_popup .button-wrapper[white-text])
+   svg
+   path {
+   stroke: #fff;
+}
+.dark-background
+   .button-wrapper[white-text]:not(
+      .fs-consent_banner .button-wrapper[white-text]
+   ):not(.fs-consent_prefs_popup .button-wrapper[white-text]):has(
+      .button-link:hover
+   ) {
+   color: #212121;
+}
+.dark-background
+   .button-wrapper[white-text]:not(
+      .fs-consent_banner .button-wrapper[white-text]
+   ):not(.fs-consent_prefs_popup .button-wrapper[white-text]):has(
+      .button-link:hover
+   )
+   svg {
+   transform: rotate(45deg);
+}
+.dark-background
+   .button-wrapper[white-text]:not(
+      .fs-consent_banner .button-wrapper[white-text]
+   ):not(.fs-consent_prefs_popup .button-wrapper[white-text]):has(
+      .button-link:hover
+   )
+   svg
+   path {
+   stroke: #ff16be;
+}
+.dark-background
+   .button-wrapper[white-text]:not(
+      .fs-consent_banner .button-wrapper[white-text]
+   ):not(.fs-consent_prefs_popup .button-wrapper[white-text])
+   .button-link:before {
+   background-color: #fff;
+}
+.dark-background .locale-list .locale-link {
+   color: #fff;
+}
+.dark-background .locale-list .locale-link.w--current {
+   color: #000;
+}
+.menu-open .navbar-container {
+   background-color: #fff;
+   z-index: 9999;
+   position: relative;
+}
+.menu-open .navbar-container .navbar_language-switcher {
+   display: none;
+}
+.dark-background .menu-open .navbar-container {
+   background-color: #212121;
+}

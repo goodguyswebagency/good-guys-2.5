@@ -1,0 +1,176 @@
+.button-wrapper .button-text,
+.button-wrapper .button-icon {
+   z-index: 20;
+   pointer-events: none;
+}
+
+.button-wrapper .button-link:before {
+   pointer-events: none;
+   background-color: #000;
+   transform: translateY(-5em);
+   content: "";
+   z-index: -1;
+   position: absolute;
+   width: 100%;
+   padding-bottom: 100%;
+   left: 0%;
+   top: auto;
+   right: 0%;
+   bottom: 0%;
+   border-radius: 50%;
+   transition:
+      border-radius 0.15s cubic-bezier(0.12, 0, 0.39, 0) 0s,
+      transform 0.2s cubic-bezier(0.12, 0, 0.39, 0);
+}
+
+.button-wrapper .button-link:hover::before {
+   transform: translateY(0em);
+   border-radius: 0%;
+   transition:
+      border-radius 0.15s cubic-bezier(0.61, 1, 0.88, 1) 0.15s,
+      0.2s cubic-bezier(0.61, 1, 0.88, 1);
+}
+
+.button-wrapper .button-link {
+   z-index: 10;
+   display: block !important;
+   max-width: none !important;
+   border-radius: 6.25rem;
+   top: -0.5rem;
+   left: -1.75rem;
+   height: calc(100% + 1rem);
+   width: calc(100% + 3.5rem);
+}
+
+@media screen and (max-width: 991px) {
+   .button-wrapper .button-link {
+      top: -0.38rem;
+      height: calc(100% + 0.75rem);
+   }
+}
+
+.button-wrapper:has(.button-link:hover) {
+   color: #fff;
+}
+
+.button-wrapper:has(.button-link:hover) svg {
+   transform: rotate(45deg);
+}
+
+.button-wrapper:has(.button-link:hover) svg path {
+   stroke: #efff32;
+}
+
+@media screen and (max-width: 991px) {
+   .button-wrapper:has(.button-link:hover) {
+      scale: 0.85 !important;
+   }
+
+   .button-wrapper:has(.button-link:active) {
+      scale: 0.85 !important;
+   }
+}
+
+/* Button large */
+.button-large .button-link {
+   left: -2rem;
+   width: calc(100% + 4rem);
+}
+
+/* Button default */
+.button-default .button-link {
+   top: -0.38rem;
+   left: -1.5rem;
+   width: calc(100% + 3rem);
+   height: calc(100% + 0.75rem);
+}
+
+@media screen and (max-width: 767px) {
+   .button-default .button-link {
+      top: -0.25rem;
+      height: calc(100% + 0.5rem);
+   }
+}
+
+/* Button small */
+.button-small:has(.button-link:hover) .button-small-icon {
+   display: block;
+}
+
+.button-small .button-link {
+   top: -0.25rem;
+   left: -1rem;
+   width: calc(100% + 2rem);
+   height: calc(100% + 0.5rem);
+}
+
+/* white text = true */
+.button-wrapper[white-text="true"] {
+   color: #fff;
+   border-top-color: #fff;
+}
+
+.button-wrapper[white-text="true"] svg path {
+   stroke: #fff;
+}
+
+.button-wrapper[white-text="true"]:has(.button-link:hover) {
+   color: #212121;
+}
+
+.button-wrapper[white-text="true"]:has(.button-link:hover) svg {
+   transform: rotate(45deg);
+}
+
+.button-wrapper[white-text="true"]:has(.button-link:hover) svg path {
+   stroke: #ff16be;
+}
+
+.button-wrapper[white-text="true"] .button-link:before {
+   background-color: #fff;
+}
+
+/* Link block */
+.link-block:hover .link-block-circle {
+   width: 100%;
+   height: 100%;
+   border-radius: 0;
+   top: 0px;
+   left: 0px;
+}
+
+.link-block:hover svg {
+   transform: rotate(45deg);
+}
+
+/* Link block purple-link="true" */
+.link-block[purple-link="true"] {
+   color: #fff;
+   border-color: #666;
+}
+
+.link-block[purple-link="true"] .link-block-circle {
+   background-color: #ff16be;
+}
+
+.link-block[purple-link="true"] svg path {
+   stroke: #fff;
+}
+
+/* small button */
+.small-link-wrapper {
+   transition: all 0.2s;
+}
+
+.small-link-wrapper:hover {
+   color: #fff;
+   background-color: #000;
+}
+
+.small-link-wrapper:hover .small-link_arrow {
+   opacity: 1;
+}
+
+.small-link-wrapper .small-link_arrow {
+   transition: all 0.2s;
+}

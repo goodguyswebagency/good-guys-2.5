@@ -1,0 +1,96 @@
+.section_footer .footer_social-text {
+   position: relative;
+}
+
+.section_footer .footer_social-text:after {
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   width: 100%;
+   height: 1px;
+   max-width: 0px;
+   content: "";
+   background-color: #fff;
+   transition: all 0.2s ease;
+}
+
+.section_footer .footer_social-text:hover:after {
+   max-width: 100%;
+}
+
+.section_footer .footer_bottom-link:after {
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   width: 100%;
+   height: 1px;
+   max-width: 0px;
+   content: "";
+   background-color: #fff;
+   transition: all 0.2s ease;
+}
+
+.section_footer .footer_bottom-link:hover:after {
+   max-width: 100%;
+}
+
+.section_footer .footer_bottom-link:before {
+   background-color: #fdfdfd;
+   bottom: 9px;
+   content: "";
+   height: 2px;
+   left: -20px;
+   position: absolute;
+   width: 6px;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+   .section_footer .footer_form,
+   .section_footer #w-node-eb27cb79-49a9-3722-6db2-6e2b5b5d4676-c9e90c23 {
+      grid-area: 2/8/3/13;
+   }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+   .section_footer .footer_form,
+   .section_footer #w-node-eb27cb79-49a9-3722-6db2-6e2b5b5d4676-c9e90c23 {
+      grid-area: 3/4/4/13;
+   }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+   .section_footer .footer_links,
+   .section_footer #w-node-cb821aa1-20bb-42b4-5d0b-5bfedac91718-c9e90c23 {
+      grid-area: 4/4/5/13;
+   }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+   .section_footer .footer_info,
+   .section_footer #w-node-d06d78c1-1085-e39f-1428-65b91d90e17c-c9e90c23 {
+      grid-area: 2/4/3/11;
+   }
+}
+
+.section_footer .footer_form-input:focus {
+   outline: 1px solid #2562ea;
+   outline-offset: 2px;
+   border-color: #b3b3b3;
+}
+
+.section_footer .input-error-state {
+   outline: 1px solid #b91c1b !important;
+   outline-offset: 2px;
+   position: relative;
+   color: #b91c1b !important;
+}
+
+.section_footer
+   .footer_form-input:has(.input-error-state)
+   .contact-form_block-error {
+   opacity: 1;
+}
+
+.section_footer .footer .locale-list .locale-link.w--current {
+   color: #000;
+}

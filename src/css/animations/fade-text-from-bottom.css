@@ -1,0 +1,14 @@
+[fade-from-bottom="true"] {
+   opacity: 0;
+   transform: translateY(100px); /* match the animation distance */
+}
+
+h1[split-lines="true"][fade-from-bottom="true"] {
+   opacity: 1;
+   transform: translateY(0px);
+}
+
+h1[split-lines="true"][fade-from-bottom="true"] > * {
+   opacity: 0;
+   transform: translateY(100px); /* match the animation distance */
+}

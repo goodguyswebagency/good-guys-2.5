@@ -1,0 +1,161 @@
+.services_card {
+   border: 1px solid transparent;
+}
+
+.services_card:hover .services_card-heading-arrow {
+   transform: rotate(-45deg);
+}
+.services_card:hover .services_card-heading-arrow-path {
+   opacity: 1;
+}
+.services_card:hover .button-wrapper {
+   opacity: 1;
+}
+.services_card:hover .services_card-logo-large {
+   opacity: 0;
+}
+.services_card:hover .services_card-logo-small {
+   opacity: 1;
+}
+
+/* Background Green */
+.services_card[background-color="green"] {
+   --swatch--dark-1: #fff;
+   --color--text-primary: #fff;
+   --color--text-secondary: #fff;
+   border: 1px transparent;
+}
+.services_card[background-color="green"]:hover {
+   --swatch--dark-1: #000;
+   --color--text-primary: #000;
+   --color--text-secondary: #000;
+   background: radial-gradient(
+         94.64% 108.53% at 52.36% 100%,
+         rgba(0, 184, 73, 0.6) 0%,
+         rgba(4, 244, 100, 0.6) 100%
+      ),
+      #04f464;
+   box-shadow: 0px 12px 20px 0px rgba(36, 36, 36, 0.06);
+   border: 1px #00b700;
+}
+
+/* Background Pink */
+.services_card[background-color="pink"]:hover {
+   background: radial-gradient(
+         94.64% 108.53% at 52.36% 100%,
+         rgba(102, 0, 74, 0.6) 0%,
+         rgba(255, 22, 190, 0.6) 100%
+      ),
+      #ff16be;
+   border: 1px solid #ff7ada;
+}
+.services_card[background-color="pink"]:hover .button-wrapper {
+   border-top: 1px solid #fff;
+}
+.services_card[background-color="pink"]:hover .button-icon path {
+   stroke: #fff;
+}
+.services_card[background-color="pink"]:hover .button-text,
+.services_card[background-color="pink"]:hover .services_card-heading-text,
+.services_card[background-color="pink"]:hover .services_card-text,
+.services_card[background-color="pink"]:hover .services_card-number {
+   color: #fff;
+}
+
+/* Background Yellow */
+.services_card[background-color="yellow"]:hover {
+   background: radial-gradient(
+         94.64% 108.53% at 52.36% 100%,
+         rgba(238, 215, 0, 0.6) 0%,
+         rgba(238, 255, 50, 0.6) 100%
+      ),
+      #eeff32;
+   border: 1px solid #faffc0;
+   box-shadow: 0px 12px 20px 0px rgba(238, 255, 50, 0.21);
+}
+
+/* Background Blue */
+.services_card[background-color="blue"]:hover {
+   background: radial-gradient(
+         94.64% 108.53% at 52.36% 100%,
+         rgba(3, 45, 107, 0.6) 0%,
+         rgba(6, 135, 255, 0.6) 100%
+      ),
+      #146ef5;
+   box-shadow: 0px 12px 20px 0px rgba(20, 110, 245, 0.2);
+   border: 1px solid #04275d;
+   --swatch--dark-1: #fff;
+   --color--text-primary: #fff;
+   --color--text-secondary: #fff;
+}
+.services_card[background-color="blue"]:hover .services_card-heading-text,
+.services_card[background-color="blue"]:hover .services_card-text,
+.services_card[background-color="blue"]:hover .services_card-heading-arrow,
+.services_card[background-color="blue"]:hover .services_card-number {
+   color: #fff;
+}
+.services_card[background-color="blue"]:hover .button-text {
+   color: #fff;
+}
+.services_card[background-color="blue"]:hover .button-wrapper {
+   border-top: 1px solid #fff;
+}
+.services_card[background-color="blue"]:hover .button-icon path {
+   stroke: #fff;
+}
+.services_card[background-color="blue"]:hover
+   .button-wrapper:hover
+   .button-text {
+   color: #fff;
+}
+.services_card[background-color="blue"][dark-page="true"]
+   .button-wrapper:hover
+   .button-text {
+   color: #000;
+}
+
+.services_card .button-wrapper {
+   opacity: 0.3;
+   transition: all 0.3s ease;
+}
+
+.services_card[dark-page="false"] {
+   --swatch--dark-1: #000;
+   --color--text-primary: #000;
+   --color--text-secondary: #000;
+}
+.services_card[dark-page="true"] {
+   --swatch--dark-1: #fff;
+   --color--text-primary: #fff;
+   --color--text-secondary: #fff;
+}
+
+/* Show Arrow */
+.services_card[show="arrow"] .services_card-heading-arrow {
+   display: block;
+}
+.services_card[show="arrow"] .services_card-logo-large,
+.services_card[show="arrow"] .services_card-logo-small,
+.services_card[show="arrow"] .services_card-number {
+   display: none;
+}
+
+/* Show Number */
+.services_card[show="number"] .services_card-heading-arrow,
+.services_card[show="number"] .services_card-logo-large,
+.services_card[show="number"] .services_card-logo-small {
+   display: none;
+}
+.services_card[show="number"] .services_card-number {
+   display: block;
+}
+
+/* Show Image */
+.services_card[show="image"] .services_card-heading-arrow,
+.services_card[show="image"] .services_card-number {
+   display: none;
+}
+.services_card[show="image"] .services_card-logo-large,
+.services_card[show="image"] .services_card-logo-small {
+   display: block;
+}

@@ -1,0 +1,29 @@
+@import "../components/heading.css";
+
+.dev-why .swiper-slide:not(:first-child) {
+   border-left: 1px solid black;
+}
+
+.dev-why .swiper-slide:last-child {
+   border-bottom: none;
+}
+
+.dark-background {
+   background-color: #212121;
+}
+
+@media screen and (max-width: 991px) {
+   .dev-why .swiper-slide:not(:first-child) {
+      border-left: none;
+   }
+
+   .dev-why .swiper-slide:nth-child(2) {
+      border-left: 1px solid black;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .dev-why .swiper-slide:nth-child(2) {
+      border-left: none;
+   }
+}

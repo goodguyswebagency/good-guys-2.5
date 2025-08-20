@@ -1,0 +1,9 @@
+@import "../components/heading.css";
+
+.design_bottom .design_block:last-child {
+   border-bottom: 0px;
+}
+
+#wow-text {
+   color: #146ef5;
+}

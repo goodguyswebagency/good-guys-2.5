@@ -1,0 +1,101 @@
+.process_slide {
+   display: grid;
+}
+
+.process_slide-bottom-small {
+   position: relative;
+}
+.process_slide-bottom-small:after {
+   content: "";
+   position: absolute;
+   top: -0rem;
+   right: -1rem;
+   background-color: #efff32;
+   border-radius: 50%;
+   width: 41px;
+   height: 41px;
+   z-index: -1;
+}
+
+.proces_slide-last .process_slide-bottom-small:after {
+   background-color: #1318f5;
+}
+
+/* // .process_slide .process_slide-left > *,
+// .process_slide .process_slide-right > *,
+// .proces_slide-last > * {
+//   opacity: 0;
+// }
+
+// .process_slide-1 .process_slide-left > * {
+//   opacity: 1;
+// }
+
+// body::-webkit-scrollbar {
+//   display: none;
+// }
+
+// .proces_slide-last {
+//   .process_slide-bottom-big,
+//   .process_slide-bottom-small{
+//     color: #fff;
+//   }
+// } */
+
+.swiper-scrollbar {
+   position: absolute !important;
+   width: 100% !important;
+   border-bottom: 2px solid #000;
+   border-top: 2px solid #000;
+   height: 0.56rem !important;
+   padding: 0;
+   border-radius: 0 !important;
+   background-color: transparent !important;
+   bottom: 0px !important;
+   left: 0px !important;
+}
+.swiper-scrollbar-drag {
+   background: #ff16be !important; /* Color of the scrollbar thumb */
+   border-radius: 0px !important;
+}
+
+.process_navigation .swiper-button-disabled path {
+   stroke: #ccc;
+}
+
+/* // 100 / 6 = 16.66% */
+.process_slide-numbers-track.active-slide-1 {
+   transform: translateY(0%);
+}
+.process_slide-numbers-track.active-slide-2 {
+   transform: translateY(-16.66%);
+}
+.process_slide-numbers-track.active-slide-3 {
+   transform: translateY(-33.33%);
+}
+.process_slide-numbers-track.active-slide-4 {
+   transform: translateY(-49.98%);
+}
+.process_slide-numbers-track.active-slide-5 {
+   transform: translateY(-66.64%);
+}
+.process_slide-numbers-track.active-slide-6 {
+   transform: translateY(-83.3%);
+}
+
+/* // google ads process has only 5 slides, so we devide 100 / 5 = 20% */
+.google-ads_process .process_slide-numbers-track.active-slide-1 {
+   transform: translateY(0%);
+}
+.google-ads_process .process_slide-numbers-track.active-slide-2 {
+   transform: translateY(-20%);
+}
+.google-ads_process .process_slide-numbers-track.active-slide-3 {
+   transform: translateY(-40%);
+}
+.google-ads_process .process_slide-numbers-track.active-slide-4 {
+   transform: translateY(-60%);
+}
+.google-ads_process .process_slide-numbers-track.active-slide-5 {
+   transform: translateY(-80%);
+}

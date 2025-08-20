@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/css/components/cta.css"],
+  "sourcesContent": ["[cta-vertical=\"true\"] .cta {\n   flex-direction: column;\n   text-align: center;\n   align-items: center;\n   gap: 3rem;\n}\n\n@media screen and (max-width: 991px) {\n   [cta-vertical=\"true\"] .cta {\n      gap: 1rem;\n   }\n}\n\n[cta-vertical=\"true\"] .spacer-4 {\n   display: none;\n}\n\n[cta-vertical=\"true\"] .cta_info-text {\n   display: none;\n}\n\n.dark-background .section_cta {\n   border-top: 1px solid #fff;\n}\n\n.dark-background .section_cta .cta_info-heading {\n   color: #fff;\n}\n"],
+  "mappings": ";AAAA,CAAC,mBAAqB,CAAC;AACpB,kBAAgB;AAChB,cAAY;AACZ,eAAa;AACb,OAAK;AACR;AAEA,OAAO,OAAO,IAAI,CAAC,SAAS,EAAE;AAC3B,GAAC,mBAAqB,CARF;AASjB,SAAK;AACR;AACH;AAEA,CAAC,mBAAqB,CAAC;AACpB,WAAS;AACZ;AAEA,CAAC,mBAAqB,CAAC;AACpB,WAAS;AACZ;AAEA,CAAC,gBAAgB,CAAC;AACf,cAAY,IAAI,MAAM;AACzB;AAEA,CAJC,gBAIgB,CAJC,YAIY,CAAC;AAC5B,SAAO;AACV;",
+  "names": []
+}

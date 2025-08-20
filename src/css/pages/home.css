@@ -1,0 +1,106 @@
+@import "../components/heading.css";
+
+.home-hero_video {
+   opacity: 1 !important;
+}
+
+@media screen and (max-width: 1024px) {
+   #w-node-_49e33a41-ba57-1e01-551d-adfd960c8e92-c9e90c23 {
+      grid-area: span 1 / span 8 / span 1 / span 8;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   #w-node-_9a69a286-fd28-9008-c5eb-2220b55a1dae-c9e90c23 {
+      grid-column: span 8 / span 8;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .home-hero_top {
+      grid-column-gap: 16px;
+      grid-row-gap: 16px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      position: relative;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .home-hero_top-right {
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 40vw;
+      position: absolute;
+      inset: 15rem 0% auto auto;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .home-hero_top-left {
+      padding-left: 0;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   #w-node-_968ae548-cb21-90bc-f1dd-404a796b11b7-c9e90c23 {
+      grid-column: span 8 / span 8;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .home-hero_media-center {
+      height: 25.6rem;
+      margin-top: auto;
+      position: relative;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .home-hero_media-large {
+      height: 25.6rem;
+      /* // margin-top: -150px; */
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .home-hero_left-image-zone {
+      width: min(35vw, 20rem);
+      height: 25rem;
+      inset: 0% auto auto 0%;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .home-hero_right-image-zone {
+      width: min(35vw, 20rem);
+      height: 25rem;
+      inset: 0% 0% auto auto;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .home-hero_bottom {
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 11.5rem;
+   }
+}
+
+/* // @media screen and (max-width: 1024px) {
+//   .home-hero-text {
+//       max-width: 50%;
+//   }
+// } */
+
+@media screen and (max-width: 767px) {
+   .home-hero_media-large {
+      height: 27.125rem;
+      margin-top: 0;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .home-hero-text {
+      max-width: none;
+   }
+}

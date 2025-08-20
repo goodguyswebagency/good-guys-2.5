@@ -1,0 +1,21 @@
+[data-attribute="mask-text"] .line {
+   position: relative;
+}
+
+.line-mask {
+   background-color: #fff;
+   height: 110%;
+   opacity: 0.8;
+   position: absolute;
+   right: -1%;
+   top: 0;
+   width: 102%;
+   z-index: 2;
+   /* // @media screen and (max-width: 767px){
+  //   width: 105%;
+  // } */
+}
+
+.dark-background .line-mask {
+   background-color: #212121;
+}

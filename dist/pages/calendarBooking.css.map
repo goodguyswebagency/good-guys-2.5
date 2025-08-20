@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/css/animations/word-background-highlight.css"],
+  "sourcesContent": ["/* // variable --after-width will be changed in JavaScipt */\n.highlight {\n   position: relative;\n   display: inline-block;\n   --after-width: 0;\n   transition: all 0.2s;\n}\n\n.highlight.highlight-blue {\n   color: #fff;\n}\n.highlight.highlight-blue:after {\n   background-color: #0040f5;\n}\n.highlight.highlight-yellow:after {\n   background-color: #f1f935;\n}\n.highlight.highlight-pink:after {\n   background-color: #ff1cbe;\n}\n.highlight.highlight-green:after {\n   background-color: #04f464;\n}\n\n.highlight::after {\n   content: \"\";\n   position: absolute;\n   top: 0;\n   left: -1%;\n   width: var(--after-width);\n   height: 108%;\n   z-index: -1; /* Ensure it is behind the text */\n   transition: width 0.8s ease-out;\n}\n"],
+  "mappings": ";AACA,CAAC;AACE,YAAU;AACV,WAAS;AACT,iBAAe;AACf,cAAY,IAAI;AACnB;AAEA,CAPC,SAOS,CAAC;AACR,SAAO;AACV;AACA,CAVC,SAUS,CAHC,cAGc;AACtB,oBAAkB;AACrB;AACA,CAbC,SAaS,CAAC,gBAAgB;AACxB,oBAAkB;AACrB;AACA,CAhBC,SAgBS,CAAC,cAAc;AACtB,oBAAkB;AACrB;AACA,CAnBC,SAmBS,CAAC,eAAe;AACvB,oBAAkB;AACrB;AAEA,CAvBC,SAuBS;AACP,WAAS;AACT,YAAU;AACV,OAAK;AACL,QAAM;AACN,SAAO,IAAI;AACX,UAAQ;AACR,WAAS;AACT,cAAY,MAAM,KAAK;AAC1B;",
+  "names": []
+}

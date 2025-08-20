@@ -1,0 +1,20 @@
+.discovery-icon path {
+   transition: all 0.2s ease;
+}
+
+[hover-color="yellow"] .discovery-icon:hover path {
+   fill: #efff32;
+}
+
+[hover-color="pink"] .discovery-icon:hover path {
+   fill: #ff16be;
+}
+
+[dark-background="true"] {
+   --swatch--dark-1: #fff;
+   --color--text-primary: #fff;
+   --color--text-secondary: #fff;
+}
+[dark-background="true"] .discovery-icon path {
+   fill: #fff;
+}

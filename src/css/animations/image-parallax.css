@@ -1,0 +1,18 @@
+/**********************************************************
+  Image parallax
+**********************************************************/
+[image-parallax] {
+   position: relative;
+   overflow: hidden;
+}
+
+[image-parallax] img:first-child {
+   /* // height: 140%; */
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   object-fit: cover;
+   object-position: center;
+   padding: 0;
+}

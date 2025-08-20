@@ -1,0 +1,19 @@
+.heading_text code {
+   color: var(--color--text-primary);
+   font-family: inherit;
+   font-size: inherit;
+}
+
+@media screen and (min-width: 991px) {
+   .heading_text-container[grid-area="8"] {
+      grid-area: 2 / 2 / 3 / 10 !important;
+   }
+
+   .heading_text-container[grid-area="9"] {
+      grid-area: 2 / 2 / 3 / 11 !important;
+   }
+
+   .heading_text-container[grid-area="10"] {
+      grid-area: 2 / 2 / 3 / 12 !important;
+   }
+}

@@ -1,0 +1,54 @@
+/* src/css/components/cta.css */
+[cta-vertical=true] .cta {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 3rem;
+}
+@media screen and (max-width: 991px) {
+  [cta-vertical=true] .cta {
+    gap: 1rem;
+  }
+}
+[cta-vertical=true] .spacer-4 {
+  display: none;
+}
+[cta-vertical=true] .cta_info-text {
+  display: none;
+}
+.dark-background .section_cta {
+  border-top: 1px solid #fff;
+}
+.dark-background .section_cta .cta_info-heading {
+  color: #fff;
+}
+
+/* src/css/animations/fade-text-from-bottom.css */
+[fade-from-bottom=true] {
+  opacity: 0;
+  transform: translateY(100px);
+}
+h1[split-lines=true][fade-from-bottom=true] {
+  opacity: 1;
+  transform: translateY(0px);
+}
+h1[split-lines=true][fade-from-bottom=true] > * {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+/* src/css/animations/image-parallax.css */
+[image-parallax] {
+  position: relative;
+  overflow: hidden;
+}
+[image-parallax] img:first-child {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  padding: 0;
+}
+/*# sourceMappingURL=aboutUs.css.map */

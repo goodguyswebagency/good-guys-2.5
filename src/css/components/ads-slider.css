@@ -1,0 +1,21 @@
+.section_ads-slider .container-global {
+   border-left: 1px solid #fff;
+   border-right: 1px solid #fff;
+}
+
+.section_ads-slider .container-global .ads-swiper {
+   overflow: visible;
+}
+
+.section_ads-slider .container-global .asd-swiper-wrapper {
+   padding-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+   .section_ads-slider
+      .container-global
+      .asd-swiper-wrapper
+      .ads-swiper-slide:nth-child(even) {
+      transform: translateY(4rem);
+   }
+}

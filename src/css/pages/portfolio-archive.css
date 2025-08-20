@@ -1,0 +1,41 @@
+.portfolio-showcase_filter {
+   transition: all 0.3s ease;
+   position: relative;
+   padding: 0.75rem 1rem 0.75rem 3.1rem;
+   border-radius: 6.25rem;
+   border: 1px solid transparent;
+}
+.portfolio-showcase_filter:hover {
+   color: #000;
+   border: 1px solid black;
+}
+.portfolio-showcase_filter:hover:before {
+   opacity: 1;
+}
+.portfolio-showcase_filter:before {
+   position: absolute;
+   opacity: 0;
+   transition: all 0.5s ease;
+   content: "";
+   width: 1.5rem;
+   height: 1.5rem;
+   left: 1rem;
+   top: 50%;
+   transform: translateY(-50%);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   background-image: url("https://uploads-ssl.webflow.com/6666fa328cf6c110c9e90c20/667962d73243de7bfa196207_star-icon.svg");
+}
+
+@media screen and (min-width: 992px) {
+   .portfolio-showcase:nth-child(2n + 2) .portfolio-showcase_heading {
+      flex-direction: row-reverse;
+   }
+   .portfolio-showcase:nth-child(2n + 2) .portfolio-showcase_media {
+      order: 9999;
+   }
+   .portfolio-showcase:nth-child(2n + 2) .portfolio-showcase_info {
+      padding-left: 0px;
+   }
+}

@@ -1,0 +1,28 @@
+.section_steps {
+   --step-color: #000;
+}
+
+[steps-color="pink"] {
+   --step-color: #ff16be;
+}
+
+.step_line {
+   stroke: var(--step-color);
+}
+
+.step_number-icon {
+   transition: all 0.2s ease;
+}
+.step_number-icon path {
+   fill: #000;
+   stroke: #000;
+}
+
+.step.active-step .step_number-text {
+   color: var(--step-color);
+}
+
+.step.active-step .step_number .step_number-icon path {
+   fill: #ff16be;
+   stroke: #ff16be;
+}

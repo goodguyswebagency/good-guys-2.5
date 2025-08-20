@@ -1,0 +1,51 @@
+/* // this style will apply only to devices that have a cursor (exclude touch devices) */
+@media (pointer: fine) {
+   /* // show cursor when the mouse is on screen and hide when mouse is out */
+   body:hover .cursor {
+      opacity: 1;
+   }
+}
+
+.cursor-yellow {
+   background-color: #f1f935;
+}
+
+@media screen and (min-width: 992px) {
+   a {
+      cursor: none;
+   }
+}
+
+@media screen and (min-width: 992px) {
+   .navbar a {
+      cursor: pointer;
+   }
+}
+
+.navbar:hover ~ .cursor {
+   opacity: 0 !important;
+}
+
+.cursor-text {
+   transition: all 1s;
+   display: none;
+   font-size: 0.2rem;
+}
+
+.cursor.custom-cursor {
+   mix-blend-mode: normal;
+}
+
+.cursor_dot.custom-cursor {
+   opacity: 1;
+   width: 11rem;
+   height: 11rem;
+}
+
+.cursor-text.custom-cursor {
+   opacity: 1;
+   display: inline;
+   font-size: 2cqw;
+   width: fit-content;
+   text-align: center;
+}

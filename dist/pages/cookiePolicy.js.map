@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../bin/live-reload.js"],
+  "sourcesContent": ["new EventSource(`${SERVE_ORIGIN}/esbuild`).addEventListener(\"change\", () =>\n   location.reload(),\n);\n"],
+  "mappings": ";;;AAAA,MAAI,YAAY,GAAG,uBAAY,UAAU,EAAE;AAAA,IAAiB;AAAA,IAAU,MACnE,SAAS,OAAO;AAAA,EACnB;",
+  "names": []
+}
